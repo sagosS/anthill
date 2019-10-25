@@ -1,8 +1,0 @@
-e 2019-10-25 09.53.28 >> my_class.image_text >> текст невставлен в кртинку >> [Errno 2] No such file or directory: 'images/images_blank/holidays/HolidayBlank.png'
-e 2019-10-25 09.53.42 >> my_class.image_text >> текст невставлен в кртинку >> [Errno 2] No such file or directory: 'images/images_blank/holidays/HolidayBlank.png'
-e 2019-10-25 09.55.19 >> my_class.image_text >> текст невставлен в кртинку >> [Errno 2] No such file or directory: 'images/images_text/holidays/hbt.jpg'
-e 2019-10-25 09.56.40 >> my_class.image_text >> текст невставлен в кртинку >> cannot write mode RGBA as JPEG
-e 2019-10-25 09.58.52 >> my_class.image_text >> текст невставлен в кртинку >> cannot write mode RGBA as JPEG
-e 2019-10-25 14.06.48 >> my_class.image_text >> текст невставлен в кртинку >> cannot write mode RGBA as JPEG
-e 2019-10-25 14.08.29 >> my_class.image_text >> текст невставлен в кртинку >> cannot write mode RGBA as JPEG
-e 2019-10-25 14.12.26 >> my_class.image_text >> текст невставлен в кртинку >> cannot write mode RGBA as JPEG

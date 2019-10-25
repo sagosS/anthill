@@ -5,7 +5,6 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 
 # TODO: проверка папки на существование и создание есди нет
-# TODO: создание разных форматов из разных форматов png > jpg
 
 class TextToImage:
     _translator = language.Language()
@@ -18,6 +17,10 @@ class TextToImage:
     @staticmethod
     def to_image(image_name, text, image_font, x_position, y_position, save_name_image):
         image = Image.open(config.ANTHILL_IMAGES_BLANK_PATH + image_name)
+        print(image.format)
+        # из png в jpg выравнивание цветов
+        if image.mode == 'RGBA':
+            image = image.convert("RGB")
         draw = ImageDraw.Draw(image)
         draw.text((x_position, y_position), text, (255, 184, 44), font=image_font)
         image.save(config.ANTHILL_IMAGES_TEXT_PATH + save_name_image)

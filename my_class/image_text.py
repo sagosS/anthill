@@ -17,7 +17,6 @@ class TextToImage:
     @staticmethod
     def to_image(image_name, text, image_font, x_position, y_position, save_name_image):
         image = Image.open(config.ANTHILL_IMAGES_BLANK_PATH + image_name)
-        print(image.format)
         # из png в jpg выравнивание цветов
         if image.mode == 'RGBA':
             image = image.convert("RGB")

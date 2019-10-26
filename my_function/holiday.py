@@ -7,6 +7,8 @@ day = today.strftime("%d")
 month = today.strftime("%m")
 
 
+# todo: праздников бывает несколько разобратся с запросами к БД
+
 def holiday():
     result_db = db.holiday_check(this_date())
     if result_db:

@@ -7,8 +7,6 @@
 import tweepy
 import config
 from my_class import language, report
-from urllib.request import urlretrieve
-from urllib.error import URLError, HTTPError
 
 
 class Twitter:

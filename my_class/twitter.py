@@ -30,7 +30,7 @@ class Twitter:
         self._api.update_with_media(image, text)
 
     def text_twitter(self, text, who_posted):
-        learn_more = '..\n Узнать больше: ' + config.ANTHILL_FACEBOOK_URL
+        learn_more = '..\n Читать: ' + config.ANTHILL_FACEBOOK_URL
         twit = (text[:140-len(learn_more)] + learn_more) if len(text) >= 140 else text
         try:
             self._api.update_status(twit)

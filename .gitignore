@@ -4,7 +4,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-report/
 
 # C extensions
 *.so
@@ -162,3 +161,7 @@ dmypy.json
 Буде вилучено telegram_bot/
 Буде вилучено termsfeed-html-privacy-policy.zip
 Буде вилучено images/holidays/
+!/config.py
+!/read_me.txt
+!/termsfeed-html-privacy-policy.zip
+!/razrabotka.py

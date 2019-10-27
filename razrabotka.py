@@ -32,7 +32,7 @@ title = text_holiday('С праздником суповары', 'title')
 text = text_holiday('Всемирный день защиты морских', 'text')
 # 'Всемирный день защиты морских млекопитающих'
 
-text_img.set_text_to_image('holidays', 'blank', 'png', title['print_text'], 'Ubuntu-Light',
+text_img.set_text_to_image('holidays', 'blank', 'png', title['print_text'], 'Ubuntu-Bold',
                            title['font_size'], title['margin_left'], title['margin_bottom'], 'jpg')
 text_img.set_text_to_image('holidays', 'blank_text', 'jpg', text['print_text'], 'Ubuntu-Bold',
                            text['font_size'], text['margin_left'], text['margin_bottom'], 'jpg')

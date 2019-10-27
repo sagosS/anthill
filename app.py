@@ -17,59 +17,59 @@ elif argv[1] == "WVCF":
 
     fb.text_facebook(fuel, "WVCF.flue()")
     tg.text_telegram(fuel, "WVCF.flue()")
-    tw.text_twiter(fuel, "WVCF.flue()")
+    tw.text_twitter(fuel, "WVCF.flue()")
 
     fb.text_facebook(coin, "WVCF.coin()")
     tg.text_telegram(coin, "WVCF.coin()")
-    tw.text_twiter(coin, "WVCF.coin()")
+    tw.text_twitter(coin, "WVCF.coin()")
 
     fb.text_facebook(valuta, "WVCF.valuta()")
     tg.text_telegram(valuta, "WVCF.valuta()")
-    tw.text_twiter(valuta, "WVCF.valuta()")
+    tw.text_twitter(valuta, "WVCF.valuta()")
 
     fb.text_facebook(weather, "WVCF.weather()")
     tg.text_telegram(weather, "WVCF.weather()")
-    tw.text_twiter(weather, "WVCF.weather()")
+    tw.text_twitter(weather, "WVCF.weather()")
 elif argv[1] == "weatherToday":
     weather = weather.ReadWather().water_read(how='today')
     tg.text_telegram(weather, "weatherToday")
     fb.text_facebook(weather, "weatherToday")
-    tw.text_twiter(weather, "weatherToday")
+    tw.text_twitter(weather, "weatherToday")
 elif argv[1] == "weatherNow":
     weather = weather.ReadWather().water_read(how='now')
     fb.text_picture_facebook(weather, 'shortPostWeather.png', "weatherNow")
     tg.text_telegram(weather, "weatherNow")
-    tw.text_twiter(weather, "weatherNow")
+    tw.text_twitter(weather, "weatherNow")
 elif argv[1] == "weatherTomorrow":
     weather = weather.ReadWather().water_read(how='tomorrow')
     fb.text_facebook(weather, "weatherTomorrow")
     tg.text_telegram(weather, "weatherTomorrow")
-    tw.text_twiter(weather, "weatherTomorrow")
+    tw.text_twitter(weather, "weatherTomorrow")
 elif argv[1] == "valuta":
     valuta = torgi_resurs.return_valuta()
     fb.text_facebook(valuta, "valuta")
     tg.text_telegram(valuta, "valuta")
-    tw.text_twiter(valuta, "valuta")
+    tw.text_twitter(valuta, "valuta")
 elif argv[1] == "coin":
     coin = coin.coin_now()
     fb.text_facebook(coin, "coin")
     tg.text_telegram(coin, "coin")
-    tw.text_twiter(coin, "coin")
+    tw.text_twitter(coin, "coin")
 elif argv[1] == "fuel":
     fuel = minfin.fuel()
     fb.text_facebook(fuel, "fuel")
     tg.text_telegram(fuel, "fuel")
-    tw.text_twiter(fuel, "fuel")
+    tw.text_twitter(fuel, "fuel")
 elif argv[1] == "holidayNow":
     holiday = holiday.holiday()
     if holiday:
         fb.text_facebook(holiday, "holidayNow")
         tg.text_telegram(holiday, "holidayNow")
-        tw.text_twiter(holiday, "holidayNow")
+        tw.text_twitter(holiday, "holidayNow")
 elif argv[1] == "holidayPre":
     holiday = holiday.holiday_pre_one()
     if holiday:
         fb.text_facebook(holiday, "holidayPre")
         tg.text_telegram(holiday, "holidayPre")
-        tw.text_twiter(holiday, "holidayPre")
+        tw.text_twitter(holiday, "holidayPre")
 

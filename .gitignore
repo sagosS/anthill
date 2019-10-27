@@ -165,3 +165,4 @@ dmypy.json
 !/read_me.txt
 !/termsfeed-html-privacy-policy.zip
 !/razrabotka.py
+!/.gitignore
